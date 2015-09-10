@@ -1,0 +1,15 @@
+{
+	"name": "glorand/laravelswagger",
+	"description": "Swagger integration to Laravel 5",
+	"keywords": ["laravel", "laravel5", "swagger", "swagger2", "swagger-php"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Gombos Lorand",
+			"email": "gombos.lorand@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.5.9"
+	},
+}
