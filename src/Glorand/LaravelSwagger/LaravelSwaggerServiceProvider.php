@@ -14,10 +14,10 @@ class LaravelSwaggerServiceProvider extends ServiceProvider
     public function boot()
     {
         if (!$this->app->routesAreCached()) {
-            require __DIR__ . '/../../routes.php';
+            require __DIR__ . '/Http/routes.php';
         }
-        $this->loadViewsFrom(__DIR__ . '/../../views', 'laravel-swagger');
-        $this->loadTranslationsFrom(__DIR__ . '/../../translations', 'laravel-swagger');
+        //$this->loadViewsFrom(__DIR__ . '/../../views', 'laravel-swagger');
+        //$this->loadTranslationsFrom(__DIR__ . '/../../translations', 'laravel-swagger');
 
         $this->publishes([
             __DIR__ . '/../../views' => base_path('resources/views/vendor/laravel-swagger'),
@@ -38,7 +38,7 @@ class LaravelSwaggerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../../config/swaggervel.php', 'swaggervel'
+            __DIR__ . '/../../config/laravel-swagger.php', 'laravel-swagger'
         );
     }
 
