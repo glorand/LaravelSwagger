@@ -17,7 +17,7 @@ return [
       | Absolute path to directory containing the swagger annotations are stored.
       |--------------------------------------------------------------------------
     */
-    "app-dir" => "modules/Api",
+    "app-dir" => "vendor/zircote/swagger-php/Examples/petstore.swagger.io",
     /*
       |--------------------------------------------------------------------------
       | Absolute path to directories that you would like to exclude from swagger generation
