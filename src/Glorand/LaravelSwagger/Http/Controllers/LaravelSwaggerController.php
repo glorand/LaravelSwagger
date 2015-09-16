@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Config;
 
 class LaravelSwaggerController extends Controller
 {
-    public function getIndex(){
+    public function getIndex()
+    {
         $swaggerService = new SwaggerService();
         if (Config::get('laravel-swagger.generateAlways')) {
             $swaggerService->generateJson();
