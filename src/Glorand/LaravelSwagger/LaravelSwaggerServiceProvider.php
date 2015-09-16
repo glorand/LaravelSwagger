@@ -1,5 +1,6 @@
-<?php namespace Glorand\LaravelSwagger;
+<?php
 
+namespace Glorand\LaravelSwagger;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -38,8 +39,8 @@ class LaravelSwaggerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../../config/laravel-swagger.php', 'laravel-swagger'
+            __DIR__ . '/../../config/laravel-swagger.php',
+            'laravel-swagger'
         );
     }
-
 }
