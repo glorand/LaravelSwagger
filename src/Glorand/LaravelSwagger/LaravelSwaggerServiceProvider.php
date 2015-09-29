@@ -17,7 +17,7 @@ class LaravelSwaggerServiceProvider extends ServiceProvider
         if (!$this->app->routesAreCached()) {
             require __DIR__ . '/Http/routes.php';
         }
-        //$this->loadViewsFrom(__DIR__ . '/../../views', 'laravel-swagger');
+        $this->loadViewsFrom(__DIR__ . '/../../views', 'laravel-swagger');
         //$this->loadTranslationsFrom(__DIR__ . '/../../translations', 'laravel-swagger');
 
         $this->publishes([

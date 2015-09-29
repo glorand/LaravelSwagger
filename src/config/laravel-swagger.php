@@ -1,5 +1,6 @@
 <?php
 return [
+    'swagger-route' => 'swagger',
     /*
       |--------------------------------------------------------------------------
       | Absolute path to location where parsed swagger annotations will be stored
@@ -11,7 +12,7 @@ return [
       | Relative path to access parsed swagger annotations.
       |--------------------------------------------------------------------------
     */
-    'doc-route' => 'swagger',
+    'doc-route' => 'swagger/docs',
     /*
       |--------------------------------------------------------------------------
       | Absolute path to directory containing the swagger annotations are stored.
@@ -36,4 +37,6 @@ return [
       |--------------------------------------------------------------------------
     */
     "generateAlways" => true,
+
+    "api-key" => "access_token",
 ];

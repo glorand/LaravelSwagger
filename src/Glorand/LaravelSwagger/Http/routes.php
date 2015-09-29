@@ -1,3 +1,4 @@
 <?php
+$swaggerRoute = Config::get('laravel-swagger.swagger-route');
 
-Route::controller('swagger', 'Glorand\\LaravelSwagger\\Http\\Controllers\\LaravelSwaggerController');
+Route::controller($swaggerRoute, 'Glorand\\LaravelSwagger\\Http\\Controllers\\LaravelSwaggerController');
