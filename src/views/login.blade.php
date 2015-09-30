@@ -4,7 +4,7 @@
 
 </head>
 <body>
-<form action="{{Config::get('laravel-swagger.swagger-route')}}-auth/login/" method="post">
+<form action="{{Config::get('laravel-swagger.swagger-route')}}-auth/login" method="post">
     <h1>Login</h1>
     @if(Session::has('error'))
         <div class="alert-box success">
