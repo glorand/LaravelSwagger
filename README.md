@@ -1,4 +1,4 @@
-INTERNAL USE ONLY
+#INTERNAL USE ONLY
 
 # LaravelSwagger
 Swagger implementation for Laravel 5.x
