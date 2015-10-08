@@ -1,4 +1,4 @@
-//<script>
+<script>
     $(function () {
         var url = window.location.search.match(/url=([^&]+)/);
         if (url && url.length > 1) {
@@ -63,4 +63,4 @@
             }
         }
     });
-//</script>
+</script>

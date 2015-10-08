@@ -1,4 +1,4 @@
-@extends('laravel-swagger::layouts.app')
+@extends('laravel-swagger::layouts.swagger')
 
 @section('content')
     <div id='header'>
@@ -16,5 +16,6 @@
 
     <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
     <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+    <a href="{{url('swagger-auth/logout')}}">Logout</a>
     @include('laravel-swagger::partials.app_js')
 @endsection
