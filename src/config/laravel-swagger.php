@@ -13,6 +13,25 @@ return [
       |--------------------------------------------------------------------------
     */
     'doc-route' => 'swagger/docs',
+
+    'apis' => [
+        [
+            'name' => 'Api 1',
+            'key' => 'api_1',
+            'app-dir' => 'vendor/zircote/swagger-php/Examples/petstore.swagger.io',
+            "generateAlways" => true,
+            'excludes' => [],
+            'api-key' => 'access_token_1'
+        ],
+        [
+            'name' => 'Api 2',
+            'key' => 'api_2',
+            'app-dir' => 'vendor/zircote/swagger-php/Examples/petstore.swagger.io',
+            "generateAlways" => true,
+            'excludes' => [],
+            'api-key' => 'access_token_2'
+        ]
+    ],
     /*
       |--------------------------------------------------------------------------
       | Absolute path to directory containing the swagger annotations are stored.
